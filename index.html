@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spongebob Text Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');</style>
+  </head>
+
+  <body>
+    <div id="top">
+      <head>
+        <h1>Spongebob Text Generator</h1>
+      </head>
+      <div id="text-areas">
+        <textarea rows="4" cols="50" name="rawtext" class="textboxes" id="raw" onfocus="clearTextBox()">Why do I have drain flies?</textarea>
+        <button type="button" onclick="translateAndCreateImage()" class="button-80" id="translate_button" >Translate</button>
+        <textarea rows="4" cols="50" name="comment" form="usrform" class="" id="translated">WHY Do I HAVe drAiN FLIeS?</textarea>
+      </div>
+
+      <div id="choose_meme_template">
+        <h2 id="choose_image">Choose a template</h2>
+        <input class="thumbs" id="spongebob_thumb" type="image" src="images\spongebob.jpg" height="100" width="100" onclick="chooseImage('spongebob')"/>
+        <input class="thumbs" id="mems_thumb" type="image" src="images\mems.jpeg" height="100" width="100" onclick="chooseImage('mems')"/>
+      </div>
+    </div>
+
+    <div id="meme">
+      <div id="loader"></div>
+      <img id='image' src="images\spongebob.jpg"> 
+    </div>
+    
+	<script src="javascript.js"></script>
+  </body>
+
+</html>
+
+
+
+
+  
+
+    
+
+  
+ 
+
