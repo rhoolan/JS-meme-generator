@@ -1,8 +1,8 @@
 var firstTranslation = 0;
 
 var memeTemplates = {
-    'spongebob': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/spongebob.jpg?raw=true",
-    'mems': "https://raw.githubusercontent.com/rhoolan/rhoolan.github.io/main/images/mems.jpeg"
+    'spongebob': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/spongebob.jpg?raw=trues.jpeg",
+    'mems': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/mems.jpeg?raw=true"
 };
 
 var imageUrl = memeTemplates["spongebob"];
@@ -19,8 +19,7 @@ function translateAndCreateImage() {
 function clearTextBox() {
     if (firstTranslation == 0) {
         firstTranslation = 1;
-        textBoxes = document.getElementsByClassName("textboxes");
-
+        textBoxes = document.getElementsByClassName("textbox");
         // loop thru textboxes and clear text
         for (let i = 0; i < textBoxes.length; i++) {
             console.log(textBoxes[i]);
@@ -43,7 +42,6 @@ function generateSpongebobText(text) {
 
 function chooseImage(memeName) {
     imageUrl = memeTemplates[memeName];
-
     //reset border for all images 
     images = document.getElementsByClassName("thumbs");
     for (let i = 0; i < images.length; i++){
@@ -56,9 +54,6 @@ function chooseImage(memeName) {
 function createURL() {
     var apiURL = 'https://textoverimage.moesif.com/image?image_url='
     var imageText = document.getElementById('translated').value;
-    console.log(imageText)
-
-
     var URL =  apiURL + encodeURIComponent(imageUrl) + '&text=' + encodeURIComponent(imageText) + '&margin=5&y_align=bottom&x_align=center';
     return URL;
 }
