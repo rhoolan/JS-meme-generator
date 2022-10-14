@@ -12,7 +12,6 @@ function translateAndCreateImage() {
     var translatedText = generateSpongebobText(rawText)
     document.getElementById("image").src = '' //hide old meme and reveal 'loading' screen
     document.getElementById('translated').innerHTML = translatedText; 
-    console.log(translatedText);
     document.getElementById('image').src = createURL(); //show new meme
 }
 
