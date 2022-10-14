@@ -22,7 +22,6 @@ function clearTextBox() {
         textBoxes = document.getElementsByClassName("textbox");
         // loop thru textboxes and clear text
         for (let i = 0; i < textBoxes.length; i++) {
-            console.log(textBoxes[i]);
             textBoxes[i].value = '';
         }
     }
