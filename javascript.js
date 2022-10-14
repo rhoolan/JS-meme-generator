@@ -1,8 +1,8 @@
 var firstTranslation = 0;
 
 var memeTemplates = {
-    'spongebob': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/spongebob.jpg",
-    'mems': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/mems.jpeg"
+    'spongebob': "https://github.com/rhoolan/rhoolan.github.io/blob/main/images/spongebob.jpg?raw=true",
+    'mems': "https://raw.githubusercontent.com/rhoolan/rhoolan.github.io/main/images/mems.jpeg"
 };
 
 var imageUrl = memeTemplates["spongebob"];
